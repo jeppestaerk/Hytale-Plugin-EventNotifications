@@ -6,7 +6,6 @@
   <a href="https://github.com/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications/releases/latest"><img src="https://img.shields.io/github/v/release/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications?style=for-the-badge" alt="Release"></a>
   <a href="https://github.com/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications/blob/main/LICENSE"><img src="https://img.shields.io/github/license/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications?style=for-the-badge" alt="License"></a>
   <a href="https://github.com/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications/actions/workflows/build.yml"><img src="https://img.shields.io/github/actions/workflow/status/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications/build.yml?style=for-the-badge" alt="Build"></a>
-  <img src="https://img.shields.io/badge/Java-25-orange?style=for-the-badge" alt="Java 25">
 </p>
 
 # Hytale EventNotifications Plugin
