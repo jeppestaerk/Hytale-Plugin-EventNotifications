@@ -16,9 +16,9 @@ public class TargetConfig {
     private String bearerToken;
 
     // ntfy-specific options
-    private Boolean markdown;
-    private String defaultPriority;
-    private String defaultIcon;
+    private Boolean ntfyMarkdown;
+    private String ntfyDefaultPriority;
+    private String ntfyDefaultIcon;
 
     // Generic webhook options
     private String contentType;
@@ -63,16 +63,16 @@ public class TargetConfig {
         return bearerToken != null ? bearerToken : "";
     }
 
-    public boolean isMarkdown() {
-        return markdown != null ? markdown : true;
+    public boolean isNtfyMarkdown() {
+        return ntfyMarkdown != null ? ntfyMarkdown : true;
     }
 
-    public String getDefaultPriority() {
-        return defaultPriority != null ? defaultPriority : "default";
+    public String getNtfyDefaultPriority() {
+        return ntfyDefaultPriority != null ? ntfyDefaultPriority : "default";
     }
 
-    public String getDefaultIcon() {
-        return defaultIcon != null ? defaultIcon : "";
+    public String getNtfyDefaultIcon() {
+        return ntfyDefaultIcon != null ? ntfyDefaultIcon : "";
     }
 
     public String getContentType() {

@@ -19,16 +19,16 @@ public class NtfyTargetConfig {
         return config;
     }
 
-    public boolean isMarkdown() {
-        return config.isMarkdown();
+    public boolean isNtfyMarkdown() {
+        return config.isNtfyMarkdown();
     }
 
-    public String getDefaultPriority() {
-        return config.getDefaultPriority();
+    public String getNtfyDefaultPriority() {
+        return config.getNtfyDefaultPriority();
     }
 
-    public String getDefaultIcon() {
-        return config.getDefaultIcon();
+    public String getNtfyDefaultIcon() {
+        return config.getNtfyDefaultIcon();
     }
 
     public static boolean matches(TargetConfig config) {

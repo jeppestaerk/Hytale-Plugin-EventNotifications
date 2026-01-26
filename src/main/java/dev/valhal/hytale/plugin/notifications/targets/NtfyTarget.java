@@ -29,7 +29,7 @@ public class NtfyTarget extends AbstractNotificationTarget {
         Map<String, String> headers = buildBaseHeaders();
 
         // Content type - markdown if enabled
-        if (config.isMarkdown()) {
+        if (config.isNtfyMarkdown()) {
             headers.put("Content-Type", "text/markdown");
         } else {
             headers.put("Content-Type", "text/plain");
@@ -44,7 +44,7 @@ public class NtfyTarget extends AbstractNotificationTarget {
         // Priority - event config overrides target default
         String priority = eventConfig.getPriority();
         if (priority == null || priority.isEmpty()) {
-            priority = config.getDefaultPriority();
+            priority = config.getNtfyDefaultPriority();
         }
         if (priority != null && !priority.isEmpty() && !priority.equals("default")) {
             headers.put("X-Priority", priority);
@@ -59,7 +59,7 @@ public class NtfyTarget extends AbstractNotificationTarget {
         // Icon - event config overrides target default
         String icon = eventConfig.getIcon();
         if (icon == null || icon.isEmpty()) {
-            icon = config.getDefaultIcon();
+            icon = config.getNtfyDefaultIcon();
         }
         if (icon != null && !icon.isEmpty()) {
             headers.put("X-Icon", icon);

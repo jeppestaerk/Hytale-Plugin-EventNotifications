@@ -204,9 +204,9 @@ Each event supports these options:
 
 | Option | Default | Description |
 |--------|---------|-------------|
-| `markdown` | `true` | Enable markdown formatting in messages |
-| `defaultPriority` | `default` | Default priority for all events (`min`, `low`, `default`, `high`, `urgent`) |
-| `defaultIcon` | - | URL to icon image shown in notifications |
+| `ntfyMarkdown` | `true` | Enable markdown formatting in messages |
+| `ntfyDefaultPriority` | `default` | Default priority for all events (`min`, `low`, `default`, `high`, `urgent`) |
+| `ntfyDefaultIcon` | - | URL to icon image shown in notifications |
 
 ### Discord Options
 

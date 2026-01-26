@@ -5,9 +5,7 @@
       "type": "ntfy",
       "enabled": false,
       "url": "https://ntfy.sh/YOUR_TOPIC",
-      "markdown": true,
-      "defaultPriority": "default",
-      "defaultIcon": "https://raw.githubusercontent.com/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications/main/assets/Hytale-Logo.png",
+      "ntfyDefaultIcon": "https://raw.githubusercontent.com/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications/main/assets/Hytale-Logo.png",
       "events": {
         "serverStart": {
           "enabled": true,
@@ -64,7 +62,6 @@
       "enabled": false,
       "url": "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN",
       "discordAvatarUrl": "https://raw.githubusercontent.com/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications/main/assets/Hytale-Logo.png",
-      "discordUseEmbeds": true,
       "events": {
         "serverStart": {
           "enabled": true,
@@ -121,7 +118,6 @@
       "enabled": false,
       "url": "https://hooks.slack.com/services/YOUR/WEBHOOK/URL",
       "slackIconUrl": "https://raw.githubusercontent.com/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications/main/assets/Hytale-Logo.png",
-      "slackUseAttachments": true,
       "events": {
         "serverStart": {
           "enabled": true,
