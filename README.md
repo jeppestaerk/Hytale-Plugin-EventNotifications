@@ -21,7 +21,7 @@ A Hytale server plugin that sends real-time notifications to external services w
 
 ## Installation
 
-1. Download the latest `EventNotifications.jar` from releases
+1. Download the latest `EventNotifications.jar` from [releases](https://github.com/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications/releases/latest)
 2. Place the JAR in your Hytale server's `mods` folder
 3. Start the server once to generate the default config
 4. Edit `config.json` to configure your notification targets
