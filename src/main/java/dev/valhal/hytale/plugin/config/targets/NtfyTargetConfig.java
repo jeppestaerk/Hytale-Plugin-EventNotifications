@@ -27,8 +27,8 @@ public class NtfyTargetConfig {
         return config.getNtfyDefaultPriority();
     }
 
-    public String getNtfyDefaultIcon() {
-        return config.getNtfyDefaultIcon();
+    public String getNtfyIcon() {
+        return config.getNtfyIcon();
     }
 
     public static boolean matches(TargetConfig config) {

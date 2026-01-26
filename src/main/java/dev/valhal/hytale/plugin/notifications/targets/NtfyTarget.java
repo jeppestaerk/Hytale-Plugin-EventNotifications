@@ -59,7 +59,7 @@ public class NtfyTarget extends AbstractNotificationTarget {
         // Icon - event config overrides target default
         String icon = eventConfig.getIcon();
         if (icon == null || icon.isEmpty()) {
-            icon = config.getNtfyDefaultIcon();
+            icon = config.getNtfyIcon();
         }
         if (icon != null && !icon.isEmpty()) {
             headers.put("X-Icon", icon);

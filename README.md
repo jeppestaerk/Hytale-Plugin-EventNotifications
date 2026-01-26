@@ -206,7 +206,7 @@ Each event supports these options:
 |--------|---------|-------------|
 | `ntfyMarkdown` | `true` | Enable markdown formatting in messages |
 | `ntfyDefaultPriority` | `default` | Default priority for all events (`min`, `low`, `default`, `high`, `urgent`) |
-| `ntfyDefaultIcon` | - | URL to icon image shown in notifications |
+| `ntfyIcon` | - | URL to icon image shown in notifications |
 
 ### Discord Options
 

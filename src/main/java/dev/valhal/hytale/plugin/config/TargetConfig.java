@@ -18,7 +18,7 @@ public class TargetConfig {
     // ntfy-specific options
     private Boolean ntfyMarkdown;
     private String ntfyDefaultPriority;
-    private String ntfyDefaultIcon;
+    private String ntfyIcon;
 
     // Generic webhook options
     private String contentType;
@@ -71,8 +71,8 @@ public class TargetConfig {
         return ntfyDefaultPriority != null ? ntfyDefaultPriority : "default";
     }
 
-    public String getNtfyDefaultIcon() {
-        return ntfyDefaultIcon != null ? ntfyDefaultIcon : "";
+    public String getNtfyIcon() {
+        return ntfyIcon != null ? ntfyIcon : "";
     }
 
     public String getContentType() {
