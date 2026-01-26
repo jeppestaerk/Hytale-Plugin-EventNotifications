@@ -252,6 +252,10 @@ You can enable multiple targets simultaneously. Each target has independent even
 - Make sure `discordUseEmbeds` is `true`
 - Verify webhook URL is complete and valid
 
+## Acknowledgments
+
+This project was built using [Hytale-Example-Project](https://github.com/Build-9/Hytale-Example-Project) as a template.
+
 ## License
 
 MIT License
