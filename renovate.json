@@ -6,6 +6,7 @@
   "dependencyDashboard": true,
   "dependencyDashboardApproval": false,
   "dependencyDashboardAutoclose": true,
+  "dependencyDashboardHeader": "This issue lists Renovate updates and detected dependencies.",
   "extends": [
     "config:recommended"
   ],
