@@ -1,0 +1,17 @@
+{
+    "Group": "Valhal",
+    "Name": "EventNotifications",
+    "Version": "1.0.0",
+    "Description": "Sends notifications to external services when server events occur",
+    "Authors": [
+        {
+            "Name": "Jeppe St\u00e6rk",
+            "Email": "jeppe@valhal.dev",
+            "Url": "https://github.com/jeppestaerk"
+        }
+    ],
+    "Website": "https://github.com/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications",
+    "Main": "dev.valhal.hytale.plugin.EventNotificationsPlugin",
+    "ServerVersion": "*",
+    "IncludesAssetPack": false
+}
