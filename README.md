@@ -181,6 +181,7 @@ Each event supports these options:
 |--------|---------|-------------|
 | `markdown` | `true` | Enable markdown formatting in messages |
 | `defaultPriority` | `default` | Default priority for all events (`min`, `low`, `default`, `high`, `urgent`) |
+| `defaultIcon` | - | URL to icon image shown in notifications |
 
 ### Discord Options
 

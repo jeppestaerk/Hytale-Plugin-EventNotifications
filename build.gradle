@@ -1,3 +1,5 @@
+// SOURCE: https://github.com/Build-9/Hytale-Example-Project/blob/plugin/build.gradle
+
 plugins {
     id 'java'
     id 'org.jetbrains.gradle.plugin.idea-ext' version '1.3'
@@ -46,8 +48,16 @@ javadoc {
     options.addStringOption('Xdoclint:-missing', '-quiet')
 }
 
+// Adds the Hytale server as a build dependency.
+// Uses local installation if available, otherwise falls back to Maven repository.
+def localServerJar = project.hasProperty('hytaleHome') ? file("$hytaleHome/install/$patchline/package/game/latest/Server/HytaleServer.jar") : null
+
 dependencies {
-    compileOnly 'com.hypixel.hytale:Server:2026.01.24-6e2d4fc36'
+    if (localServerJar != null && localServerJar.exists()) {
+        implementation(files(localServerJar))
+    } else {
+        compileOnly 'com.hypixel.hytale:Server:2026.01.24-6e2d4fc36'
+    }
 }
 
 // Create the working directory to run the server if it does not already exist.
