@@ -3,9 +3,13 @@
   "extends": [
     "config:base"
   ],
+  "registryAliases": {
+    "hytale-release": "https://maven.hytale.com/release"
+  },
   "packageRules": [
     {
       "matchPackageNames": ["com.hypixel.hytale:Server"],
+      "registryUrls": ["https://maven.hytale.com/release"],
       "automerge": true,
       "automergeType": "pr",
       "automergeStrategy": "squash"
