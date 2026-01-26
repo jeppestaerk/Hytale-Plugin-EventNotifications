@@ -1,8 +1,17 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "automerge": true,
+  "automergeType": "pr",
+  "automergeStrategy": "squash",
+  "dependencyDashboard": true,
+  "dependencyDashboardApproval": false,
+  "dependencyDashboardAutoclose": true,
   "extends": [
     "config:recommended"
   ],
+  "platformAutomerge": true,
+  "prCreation": "immediate",
+  "rebaseWhen": "behind-base-branch",
   "registryAliases": {
     "hytale-release": "https://maven.hytale.com/release"
   },
@@ -13,13 +22,7 @@
       ],
       "registryUrls": [
         "https://maven.hytale.com/release"
-      ],
-      "automerge": true,
-      "automergeType": "pr",
-      "automergeStrategy": "squash"
+      ]
     }
-  ],
-  "gradle": {
-    "enabled": true
-  }
+  ]
 }
