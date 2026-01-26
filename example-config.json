@@ -1,0 +1,238 @@
+{
+  "enabled": true,
+  "targets": {
+    "ntfy": {
+      "type": "ntfy",
+      "enabled": true,
+      "url": "https://ntfy.sh/my-hytale-server",
+      "bearerToken": "tk_your_token_here",
+      "ntfyMarkdown": true,
+      "ntfyDefaultPriority": "default",
+      "ntfyIcon": "https://example.com/icon.png",
+      "events": {
+        "serverStart": {
+          "enabled": true,
+          "title": "{server} - Online",
+          "message": "The server is now **online** and ready for players!",
+          "priority": "high",
+          "tags": "green_circle"
+        },
+        "serverStop": {
+          "enabled": true,
+          "title": "{server} - Offline",
+          "message": "The server is **shutting down**.",
+          "priority": "high",
+          "tags": "red_circle"
+        },
+        "playerJoin": {
+          "enabled": true,
+          "title": "{server} - Player Joined",
+          "message": "**{player}** joined the server",
+          "tags": "video_game"
+        },
+        "playerLeave": {
+          "enabled": true,
+          "title": "{server} - Player Left",
+          "message": "**{player}** left the server",
+          "tags": "door"
+        },
+        "playerChat": {
+          "enabled": false,
+          "title": "{server} - Chat",
+          "message": "**{player}**: {message}",
+          "tags": "speech_balloon"
+        },
+        "groupPermissionChange": {
+          "enabled": true,
+          "title": "{server} - Permissions",
+          "message": "Group **{group}**: {action} permissions `{permissions}`",
+          "tags": "shield"
+        },
+        "playerPermissionChange": {
+          "enabled": true,
+          "title": "{server} - Permissions",
+          "message": "Player `{player}` {action} {group}{permissions}",
+          "tags": "key"
+        },
+        "gameModeChange": {
+          "enabled": true,
+          "title": "{server} - Game Mode",
+          "message": "Game mode changed to **{gamemode}**",
+          "tags": "joystick"
+        }
+      }
+    },
+    "discord": {
+      "type": "discord",
+      "enabled": true,
+      "url": "https://discord.com/api/webhooks/123456789/abcdefg",
+      "discordUsername": "My Hytale Server",
+      "discordAvatarUrl": "https://example.com/avatar.png",
+      "discordUseEmbeds": true,
+      "events": {
+        "serverStart": {
+          "enabled": true,
+          "title": "Server Online",
+          "message": "The server is now online and ready for players!",
+          "color": "#57F287"
+        },
+        "serverStop": {
+          "enabled": true,
+          "title": "Server Offline",
+          "message": "The server is shutting down.",
+          "color": "#ED4245"
+        },
+        "playerJoin": {
+          "enabled": true,
+          "title": "Player Joined",
+          "message": "**{player}** joined the server",
+          "color": "#5865F2"
+        },
+        "playerLeave": {
+          "enabled": true,
+          "title": "Player Left",
+          "message": "**{player}** left the server",
+          "color": "#99AAB5"
+        },
+        "playerChat": {
+          "enabled": false,
+          "title": "Chat",
+          "message": "**{player}**: {message}",
+          "color": "#FEE75C"
+        },
+        "groupPermissionChange": {
+          "enabled": true,
+          "title": "Group Permissions",
+          "message": "Group **{group}**: {action} permissions `{permissions}`",
+          "color": "#E67E22"
+        },
+        "playerPermissionChange": {
+          "enabled": true,
+          "title": "Player Permissions",
+          "message": "Player `{player}` {action} {group}{permissions}",
+          "color": "#E67E22"
+        },
+        "gameModeChange": {
+          "enabled": true,
+          "title": "Game Mode",
+          "message": "Game mode changed to **{gamemode}**",
+          "color": "#9B59B6"
+        }
+      }
+    },
+    "slack": {
+      "type": "slack",
+      "enabled": false,
+      "url": "https://hooks.slack.com/services/YOUR/WEBHOOK/URL",
+      "slackUsername": "Hytale Server",
+      "slackIconUrl": "https://example.com/icon.png",
+      "slackIconEmoji": ":video_game:",
+      "slackUseAttachments": true,
+      "events": {
+        "serverStart": {
+          "enabled": true,
+          "title": "Server Online",
+          "message": "The server is now online and ready for players!",
+          "color": "#57F287"
+        },
+        "serverStop": {
+          "enabled": true,
+          "title": "Server Offline",
+          "message": "The server is shutting down.",
+          "color": "#ED4245"
+        },
+        "playerJoin": {
+          "enabled": true,
+          "title": "Player Joined",
+          "message": "*{player}* joined the server",
+          "color": "#5865F2"
+        },
+        "playerLeave": {
+          "enabled": true,
+          "title": "Player Left",
+          "message": "*{player}* left the server",
+          "color": "#99AAB5"
+        },
+        "playerChat": {
+          "enabled": false,
+          "title": "Chat",
+          "message": "*{player}*: {message}",
+          "color": "#FEE75C"
+        },
+        "groupPermissionChange": {
+          "enabled": true,
+          "title": "Group Permissions",
+          "message": "Group *{group}*: {action} permissions `{permissions}`",
+          "color": "#E67E22"
+        },
+        "playerPermissionChange": {
+          "enabled": true,
+          "title": "Player Permissions",
+          "message": "Player `{player}` {action} {group}{permissions}",
+          "color": "#E67E22"
+        },
+        "gameModeChange": {
+          "enabled": true,
+          "title": "Game Mode",
+          "message": "Game mode changed to *{gamemode}*",
+          "color": "#9B59B6"
+        }
+      }
+    },
+    "webhook": {
+      "type": "webhook",
+      "enabled": false,
+      "url": "https://example.com/webhook",
+      "username": "api_user",
+      "password": "api_password",
+      "contentType": "application/json",
+      "headers": {
+        "X-API-Key": "your-api-key",
+        "X-Custom-Header": "custom-value"
+      },
+      "bodyTemplate": "{\"event\": \"{eventType}\", \"title\": \"{title:json}\", \"message\": \"{message:json}\"}",
+      "events": {
+        "serverStart": {
+          "enabled": true,
+          "title": "{server} - Online",
+          "message": "The server is now online and ready for players!"
+        },
+        "serverStop": {
+          "enabled": true,
+          "title": "{server} - Offline",
+          "message": "The server is shutting down."
+        },
+        "playerJoin": {
+          "enabled": true,
+          "title": "{server} - Player Joined",
+          "message": "{player} joined the server"
+        },
+        "playerLeave": {
+          "enabled": true,
+          "title": "{server} - Player Left",
+          "message": "{player} left the server"
+        },
+        "playerChat": {
+          "enabled": false,
+          "title": "{server} - Chat",
+          "message": "{player}: {message}"
+        },
+        "groupPermissionChange": {
+          "enabled": true,
+          "title": "{server} - Permissions",
+          "message": "Group {group}: {action} permissions {permissions}"
+        },
+        "playerPermissionChange": {
+          "enabled": true,
+          "title": "{server} - Permissions",
+          "message": "Player {player} {action} {group}{permissions}"
+        },
+        "gameModeChange": {
+          "enabled": true,
+          "title": "{server} - Game Mode",
+          "message": "Game mode changed to {gamemode}"
+        }
+      }
+    }
+  }
+}

@@ -33,6 +33,8 @@ The config file is located at `mods/Valhal_EventNotifications/config.json`.
 
 **Important:** The top-level `"enabled"` must be set to `true` for the plugin to send any notifications. By default, this is `false`.
 
+For a complete example with all options, see [example-config.json](example-config.json).
+
 ### Basic Structure
 
 ```json
