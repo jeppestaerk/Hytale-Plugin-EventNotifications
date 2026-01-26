@@ -2,7 +2,7 @@
     "Group": "Valhal",
     "Name": "EventNotifications",
     "Version": "1.0.0",
-    "Description": "Sends notifications to external services when server events occur",
+    "Description": "Sends real-time notifications via ntfy, Discord, Slack, or webhooks when server events occur",
     "Authors": [
         {
             "Name": "Jeppe St\u00e6rk",
