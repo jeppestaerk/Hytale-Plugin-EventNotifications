@@ -63,7 +63,6 @@
       "type": "discord",
       "enabled": false,
       "url": "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN",
-      "discordUsername": "Hytale Server",
       "discordAvatarUrl": "https://raw.githubusercontent.com/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications/main/assets/Hytale-Logo.png",
       "discordUseEmbeds": true,
       "events": {

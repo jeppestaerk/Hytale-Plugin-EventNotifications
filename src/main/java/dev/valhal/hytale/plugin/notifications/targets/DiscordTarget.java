@@ -42,9 +42,12 @@ public class DiscordTarget extends AbstractNotificationTarget {
         StringBuilder json = new StringBuilder();
         json.append("{");
 
-        // Bot username
+        // Bot username - use config value or fall back to server name
         String username = config.getDiscordUsername();
-        if (username != null && !username.isEmpty()) {
+        if (username == null || username.isEmpty()) {
+            username = data.getOrDefault("server", "");
+        }
+        if (!username.isEmpty()) {
             json.append("\"username\":").append(JsonUtils.quote(username)).append(",");
         }
 

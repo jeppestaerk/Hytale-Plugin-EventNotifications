@@ -187,7 +187,7 @@ Each event supports these options:
 
 | Option | Default | Description |
 |--------|---------|-------------|
-| `discordUsername` | - | Bot username shown in Discord |
+| `discordUsername` | `{server}` | Bot username shown in Discord (defaults to server name) |
 | `discordAvatarUrl` | - | URL to bot avatar image |
 | `discordUseEmbeds` | `true` | Use rich embeds instead of plain messages |
 
