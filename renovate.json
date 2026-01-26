@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": ["com.hypixel.hytale:Server"],
+      "automerge": true,
+      "automergeType": "pr",
+      "automergeStrategy": "squash"
+    }
+  ],
+  "gradle": {
+    "enabled": true
+  }
+}
