@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo-medium.png" alt="EventNotifications Logo" width="200">
+</p>
+
 # Hytale EventNotifications Plugin
 
 A Hytale server plugin that sends real-time notifications to external services when server events occur. Get notified via ntfy (phone, desktop, or web), Discord, Slack, or custom webhooks when players join, the server starts/stops, and more.

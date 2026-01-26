@@ -20,4 +20,4 @@ Get notified when events happen on your Hytale server! Sends real-time notificat
 Use the README.md content for the full CurseForge project description.
 
 ## Logo
-Use `assets/Hytale-Logo.png` (or create a custom plugin logo)
+Use `assets/logo-medium.png` (640x640) or `assets/logo-small.png` for thumbnails
