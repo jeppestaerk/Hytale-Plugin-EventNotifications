@@ -30,6 +30,12 @@ public class TargetConfig {
     private String discordAvatarUrl;
     private Boolean discordUseEmbeds;
 
+    // Slack-specific options
+    private String slackUsername;
+    private String slackIconUrl;
+    private String slackIconEmoji;
+    private Boolean slackUseAttachments;
+
     // Per-target event configurations
     private Map<String, EventConfig> events;
 
@@ -91,6 +97,22 @@ public class TargetConfig {
 
     public boolean isDiscordUseEmbeds() {
         return discordUseEmbeds != null ? discordUseEmbeds : true;
+    }
+
+    public String getSlackUsername() {
+        return slackUsername != null ? slackUsername : "";
+    }
+
+    public String getSlackIconUrl() {
+        return slackIconUrl != null ? slackIconUrl : "";
+    }
+
+    public String getSlackIconEmoji() {
+        return slackIconEmoji != null ? slackIconEmoji : "";
+    }
+
+    public boolean isSlackUseAttachments() {
+        return slackUseAttachments != null ? slackUseAttachments : true;
     }
 
     public Map<String, EventConfig> getEvents() {

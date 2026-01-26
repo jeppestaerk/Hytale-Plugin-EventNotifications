@@ -116,6 +116,63 @@
         }
       }
     },
+    "slack": {
+      "type": "slack",
+      "enabled": false,
+      "url": "https://hooks.slack.com/services/YOUR/WEBHOOK/URL",
+      "slackIconUrl": "https://raw.githubusercontent.com/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications/main/assets/Hytale-Logo.png",
+      "slackUseAttachments": true,
+      "events": {
+        "serverStart": {
+          "enabled": true,
+          "title": "Server Online",
+          "message": "The server is now online and ready for players!",
+          "color": "#57F287"
+        },
+        "serverStop": {
+          "enabled": true,
+          "title": "Server Offline",
+          "message": "The server is shutting down.",
+          "color": "#ED4245"
+        },
+        "playerJoin": {
+          "enabled": true,
+          "title": "Player Joined",
+          "message": "*{player}* joined the server",
+          "color": "#5865F2"
+        },
+        "playerLeave": {
+          "enabled": true,
+          "title": "Player Left",
+          "message": "*{player}* left the server",
+          "color": "#99AAB5"
+        },
+        "playerChat": {
+          "enabled": false,
+          "title": "Chat",
+          "message": "*{player}*: {message}",
+          "color": "#FEE75C"
+        },
+        "groupPermissionChange": {
+          "enabled": true,
+          "title": "Group Permissions",
+          "message": "Group *{group}*: {action} permissions `{permissions}`",
+          "color": "#E67E22"
+        },
+        "playerPermissionChange": {
+          "enabled": true,
+          "title": "Player Permissions",
+          "message": "Player `{player}` {action} {group}{permissions}",
+          "color": "#E67E22"
+        },
+        "gameModeChange": {
+          "enabled": true,
+          "title": "Game Mode",
+          "message": "Game mode changed to *{gamemode}*",
+          "color": "#9B59B6"
+        }
+      }
+    },
     "webhook": {
       "type": "webhook",
       "enabled": false,

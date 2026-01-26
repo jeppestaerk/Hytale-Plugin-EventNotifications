@@ -1,11 +1,12 @@
 # Hytale EventNotifications Plugin
 
-A Hytale server plugin that sends real-time notifications to external services when server events occur. Get notified via ntfy (phone, desktop, or web) or Discord when players join, the server starts/stops, and more.
+A Hytale server plugin that sends real-time notifications to external services when server events occur. Get notified via ntfy (phone, desktop, or web), Discord, or Slack when players join, the server starts/stops, and more.
 
 ## Supported Notification Services
 
 - **ntfy** - Free, open-source push notifications (recommended)
 - **Discord** - Webhook notifications with rich embeds
+- **Slack** - Webhook notifications with attachments
 - **Webhooks** - Generic HTTP webhooks for custom integrations
 
 ## Installation
@@ -40,6 +41,7 @@ The config file is located at `mods/Valhal_EventNotifications/config.json`.
   "targets": {
     "ntfy": { ... },
     "discord": { ... },
+    "slack": { ... },
     "webhook": { ... }
   }
 }
@@ -83,6 +85,29 @@ The config file is located at `mods/Valhal_EventNotifications/config.json`.
       "enabled": true,
       "title": "Player Joined",
       "message": "**{player}** joined the server",
+      "color": "#5865F2"
+    }
+  }
+}
+```
+
+### Slack Setup
+
+1. Create a Slack app at [api.slack.com/apps](https://api.slack.com/apps)
+2. Enable "Incoming Webhooks" and create a webhook for your channel
+3. Copy the webhook URL
+
+```json
+"slack": {
+  "type": "slack",
+  "enabled": true,
+  "url": "https://hooks.slack.com/services/YOUR/WEBHOOK/URL",
+  "slackUseAttachments": true,
+  "events": {
+    "playerJoin": {
+      "enabled": true,
+      "title": "Player Joined",
+      "message": "*{player}* joined the server",
       "color": "#5865F2"
     }
   }
@@ -171,7 +196,7 @@ Each event supports these options:
 | `message` | Notification body (supports placeholders) |
 | `priority` | ntfy priority: `min`, `low`, `default`, `high`, `urgent` |
 | `tags` | ntfy emoji tags (e.g., `green_circle`, `skull`) |
-| `color` | Discord embed color as hex (e.g., `#5865F2`) |
+| `color` | Discord/Slack color as hex (e.g., `#5865F2`) |
 
 ## Target Configuration Options
 
@@ -190,6 +215,15 @@ Each event supports these options:
 | `discordUsername` | `{server}` | Bot username shown in Discord (defaults to server name) |
 | `discordAvatarUrl` | - | URL to bot avatar image |
 | `discordUseEmbeds` | `true` | Use rich embeds instead of plain messages |
+
+### Slack Options
+
+| Option | Default | Description |
+|--------|---------|-------------|
+| `slackUsername` | `{server}` | Bot username shown in Slack (defaults to server name) |
+| `slackIconUrl` | - | URL to bot icon image |
+| `slackIconEmoji` | - | Emoji to use as bot icon (e.g., `:video_game:`) |
+| `slackUseAttachments` | `true` | Use rich attachments instead of plain messages |
 
 ### Webhook Options
 

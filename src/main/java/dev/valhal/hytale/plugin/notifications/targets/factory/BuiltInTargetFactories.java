@@ -1,6 +1,7 @@
 package dev.valhal.hytale.plugin.notifications.targets.factory;
 
 import dev.valhal.hytale.plugin.notifications.targets.DiscordTarget;
+import dev.valhal.hytale.plugin.notifications.targets.SlackTarget;
 import dev.valhal.hytale.plugin.notifications.targets.WebhookTarget;
 import dev.valhal.hytale.plugin.notifications.targets.NtfyTarget;
 
@@ -26,6 +27,11 @@ public final class BuiltInTargetFactories {
         // Discord target
         TargetRegistry.register(DiscordTarget.TYPE, (config, httpClient) ->
             Optional.of(new DiscordTarget(config, httpClient))
+        );
+
+        // Slack target
+        TargetRegistry.register(SlackTarget.TYPE, (config, httpClient) ->
+            Optional.of(new SlackTarget(config, httpClient))
         );
 
         // Webhook target
