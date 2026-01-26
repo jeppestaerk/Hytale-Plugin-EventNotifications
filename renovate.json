@@ -1,15 +1,19 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:recommended"
   ],
   "registryAliases": {
     "hytale-release": "https://maven.hytale.com/release"
   },
   "packageRules": [
     {
-      "matchPackageNames": ["com.hypixel.hytale:Server"],
-      "registryUrls": ["https://maven.hytale.com/release"],
+      "matchPackageNames": [
+        "com.hypixel.hytale:Server"
+      ],
+      "registryUrls": [
+        "https://maven.hytale.com/release"
+      ],
       "automerge": true,
       "automergeType": "pr",
       "automergeStrategy": "squash"
