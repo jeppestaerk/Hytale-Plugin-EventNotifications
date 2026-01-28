@@ -34,4 +34,4 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: EventNotifications-${{ steps.version.outputs.version }}
-          path: build/libs/EventNotifications-${{ steps.version.outputs.version }}.jar
+          path: build/libs/*.jar
