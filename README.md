@@ -3,9 +3,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications/releases/latest"><img src="https://img.shields.io/github/v/release/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications?style=for-the-badge" alt="Release"></a>
-  <a href="https://github.com/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications/blob/main/LICENSE"><img src="https://img.shields.io/github/license/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications?style=for-the-badge" alt="License"></a>
-  <a href="https://github.com/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications/actions/workflows/build.yml"><img src="https://img.shields.io/github/actions/workflow/status/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications/build.yml?style=for-the-badge" alt="Build"></a>
+  <a href="https://github.com/jeppestaerk/Hytale-Plugin-EventNotifications/releases/latest"><img src="https://img.shields.io/github/v/release/jeppestaerk/Hytale-Plugin-EventNotifications?style=for-the-badge" alt="Release"></a>
+  <a href="https://github.com/jeppestaerk/Hytale-Plugin-EventNotifications/blob/main/LICENSE"><img src="https://img.shields.io/github/license/jeppestaerk/Hytale-Plugin-EventNotifications?style=for-the-badge" alt="License"></a>
+  <a href="https://github.com/jeppestaerk/Hytale-Plugin-EventNotifications/actions/workflows/build.yml"><img src="https://img.shields.io/github/actions/workflow/status/jeppestaerk/Hytale-Plugin-EventNotifications/build.yml?style=for-the-badge" alt="Build"></a>
 </p>
 
 # Hytale EventNotifications Plugin
@@ -21,7 +21,7 @@ A Hytale server plugin that sends real-time notifications to external services w
 
 ## Installation
 
-1. Download the latest `EventNotifications.jar` from [releases](https://github.com/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications/releases/latest)
+1. Download the latest `EventNotifications.jar` from [releases](https://github.com/jeppestaerk/Hytale-Plugin-EventNotifications/releases/latest)
 2. Place the JAR in your Hytale server's `mods` folder
 3. Start the server once to generate the default config
 4. Edit `config.json` to configure your notification targets

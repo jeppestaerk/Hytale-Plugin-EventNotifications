@@ -1,7 +1,7 @@
 {
     "Group": "Valhal",
     "Name": "EventNotifications",
-    "Version": "1.0.0",
+    "Version": "1.0.1",
     "Description": "Sends real-time notifications via ntfy, Discord, Slack, or webhooks when server events occur",
     "Authors": [
         {
@@ -10,7 +10,7 @@
             "Url": "https://github.com/jeppestaerk"
         }
     ],
-    "Website": "https://github.com/jeppestaerk/Hytale-Plugin-Valhal-EventNotifications",
+    "Website": "https://github.com/jeppestaerk/Hytale-Plugin-EventNotifications",
     "Main": "dev.valhal.hytale.plugin.EventNotificationsPlugin",
     "ServerVersion": "*",
     "IncludesAssetPack": false
