@@ -13,58 +13,58 @@ no-changes-template: 'No changes since last release.'
 
 categories:
   - title: 'Breaking'
-    label: 'type: breaking'
+    label: 'breaking'
   - title: 'New'
-    label: 'type: feature'
+    label: 'feature'
   - title: 'Bug Fixes'
-    label: 'type: bug'
+    label: 'bug'
   - title: 'Security'
-    label: 'type: security'
+    label: 'security'
   - title: 'Maintenance'
-    label: 'type: maintenance'
+    label: 'maintenance'
   - title: 'Documentation'
-    label: 'type: docs'
+    label: 'docs'
   - title: 'Dependency Updates'
-    label: 'type: dependencies'
+    label: 'dependencies'
     collapse-after: 5
   - title: 'Other changes'
 
 version-resolver:
   major:
     labels:
-      - 'type: breaking'
+      - 'breaking'
   minor:
     labels:
-      - 'type: feature'
+      - 'feature'
   patch:
     labels:
-      - 'type: bug'
-      - 'type: maintenance'
-      - 'type: docs'
-      - 'type: dependencies'
-      - 'type: security'
+      - 'bug'
+      - 'maintenance'
+      - 'docs'
+      - 'dependencies'
+      - 'security'
   default: patch
 
 autolabeler:
-  - label: 'type: docs'
+  - label: 'docs'
     files:
       - '*.md'
       - 'docs/**/*'
-  - label: 'type: dependencies'
+  - label: 'dependencies'
     files:
       - 'build.gradle'
       - 'gradle.properties'
       - 'gradle/**/*'
-  - label: 'type: maintenance'
+  - label: 'maintenance'
     files:
       - '.github/**/*'
-  - label: 'type: breaking'
+  - label: 'breaking'
     title:
       - '/!:/'
-  - label: 'type: feature'
+  - label: 'feature'
     title:
       - '/^feat(\(.+\))?:/'
-  - label: 'type: bug'
+  - label: 'bug'
     title:
       - '/^fix(\(.+\))?:/'
 

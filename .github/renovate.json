@@ -24,6 +24,11 @@
       "registryUrls": [
         "https://maven.hytale.com/release"
       ]
+    },
+    {
+      "matchPackagePatterns": ["*"],
+      "groupName": "all dependencies",
+      "groupSlug": "all"
     }
   ]
 }

@@ -1,0 +1,33 @@
+# Labels used by release-drafter for categorization
+- name: breaking
+  description: "Breaking changes"
+  color: "d73a4a"
+
+- name: feature
+  description: "New feature or enhancement"
+  color: "a2eeef"
+
+- name: bug
+  description: "Bug fix"
+  color: "d73a4a"
+
+- name: security
+  description: "Security fix"
+  color: "ee0701"
+
+- name: maintenance
+  description: "Maintenance and chores"
+  color: "fef2c0"
+
+- name: docs
+  description: "Documentation changes"
+  color: "0075ca"
+
+- name: dependencies
+  description: "Dependency updates"
+  color: "0366d6"
+
+# Control labels
+- name: skip-changelog
+  description: "Exclude from release notes"
+  color: "ededed"

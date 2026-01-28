@@ -1,6 +1,9 @@
 # ===== Project =====
 CLAUDE.md
 .claude/
+curseforge-api.http
+http-client.env.json
+http-client.private.env.json
 
 # ===== Hytale =====
 run/
