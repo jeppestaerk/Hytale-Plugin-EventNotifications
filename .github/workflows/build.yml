@@ -29,5 +29,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v6
         with:
-          name: HytaleNotifications
+          name: EventNotifications
           path: build/libs/*.jar
