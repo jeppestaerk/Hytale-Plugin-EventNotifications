@@ -26,8 +26,12 @@ jobs:
       - name: Build
         run: ./gradlew build -x test
 
+      - name: Get version
+        id: version
+        run: echo "version=$(./gradlew properties -q | grep '^version:' | awk '{print $2}')" >> $GITHUB_OUTPUT
+
       - name: Upload artifact
         uses: actions/upload-artifact@v6
         with:
-          name: EventNotifications
+          name: EventNotifications-${{ steps.version.outputs.version }}
           path: build/libs/*.jar
