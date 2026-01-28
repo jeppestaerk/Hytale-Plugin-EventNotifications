@@ -5,7 +5,6 @@
 <p align="center">
   <a href="https://github.com/jeppestaerk/Hytale-Plugin-EventNotifications/releases/latest"><img src="https://img.shields.io/github/v/release/jeppestaerk/Hytale-Plugin-EventNotifications?style=for-the-badge" alt="Release"></a>
   <a href="https://github.com/jeppestaerk/Hytale-Plugin-EventNotifications/blob/main/LICENSE"><img src="https://img.shields.io/github/license/jeppestaerk/Hytale-Plugin-EventNotifications?style=for-the-badge" alt="License"></a>
-  <a href="https://github.com/jeppestaerk/Hytale-Plugin-EventNotifications/actions/workflows/build.yml"><img src="https://img.shields.io/github/actions/workflow/status/jeppestaerk/Hytale-Plugin-EventNotifications/build.yml?style=for-the-badge" alt="Build"></a>
 </p>
 
 # Hytale EventNotifications Plugin
